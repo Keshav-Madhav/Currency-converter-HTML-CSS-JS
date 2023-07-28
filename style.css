@@ -64,7 +64,7 @@ input#amount:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 select{
@@ -89,7 +89,7 @@ select option{
     color: #02002c;
 }
 
-button{
+#convert{
     font-size: 1em;
     width: 100%;
     background-color: #9873fe;
@@ -109,3 +109,12 @@ button{
     padding: 0.8em 0;
 }
 
+#switch {
+    background-image: url("./Assets/swap.png");
+    background-color: #9873fe;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:20px;
+    padding: 15px 15px;
+    border-radius: 10px;
+}

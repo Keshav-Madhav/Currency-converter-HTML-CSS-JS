@@ -21,7 +21,7 @@ currencies.forEach((currency) => {
 fromCurr.value="INR";
 toCurr.value="USD";
 
-let converCurr= ()=>{
+let convertCurr= ()=>{
     const amount = document.querySelector("#amount").value;
     const fromCurrency=fromCurr.value;
     const toCurrency=toCurr.value;
@@ -39,5 +39,16 @@ let converCurr= ()=>{
     }
 }
 
-document.querySelector("#convert").addEventListener("click", converCurr);
-window.addEventListener("load", converCurr);
+document.querySelector("#convert").addEventListener("click", convertCurr);
+window.addEventListener("load", convertCurr);
+
+const switchButton = document.querySelector("#switch");
+switchButton.addEventListener("click", () => {
+    const fromCurrency = fromCurr.value;
+    const toCurrency = toCurr.value;
+
+    fromCurr.value = toCurrency;
+    toCurr.value = fromCurrency;
+
+    convertCurr();
+});
