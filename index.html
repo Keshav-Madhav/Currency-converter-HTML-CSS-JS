@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/app-icon.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
     <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="details">
+            <img src="./Assets/app-icon.svg" alt="">
+            <h1 class="title">Currency Converter</h1>
+        </div>
+        <label for="amount">Amount: </label><input type="number" id="amount" value="100">
+        <div class="dropdowns">
+            <select id="from-select"></select>
+            <select id="to-select"></select>
+        </div>
+        <button id="convert">Convert</button>
+        <p id="result"></p>
+    </div>
 </body>
 <script src="./Assets/currency-codes.js"></script>
 <script src="./Assets/api-key.js"></script>
