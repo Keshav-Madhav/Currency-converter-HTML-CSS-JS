@@ -69,9 +69,10 @@ input#amount:focus{
 
 select{
     width: 100%;
-    padding: 0.6em;
-    font-size: 1em;
+    padding: 1.4em;
+    font-size: 0.8em;
     border-radius: 0.2em;
+    padding-right: 40px;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
